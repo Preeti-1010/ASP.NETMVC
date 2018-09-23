@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 25px;
+        }
+        .auto-style8 {
+            height: 30px;
+        }
+        
+        .t1:hover{
+         
+     -webkit-transform: skew(10deg,5deg); /* Chrome, Safari, Opera */       
+        }
+        
+        header {     
+    transition:all 500ms ease;
+    top:0;
+     position:fixed ;
+    left:0;
+    width: 100%;
+    z-index:1000;
+        }
+        
+     
+    </style>
+</head>
+<body style="height:100%; margin-top: 0px;" onload="setTimeout('runSlideShow()', 1001);">
+
+
+    <form id="form1" runat="server" style="height:100%;background:url(images/white.jpg)">
+            <header>
+            <div id="headerdiv" style="background-color: firebrick; height:20px; border-bottom: thick dotted white"></div>
+    <table id="headertbl" style="width:100%;background:url(images/white.jpg); height: 20px; background-color: firebrick;  border-bottom: thick dotted firebrick">
+        <tr>
+            <td class="t1" style="width:30%"><img src="images/E-Booking.png" style=" height:59px; width: 168px;"  alt="logo" /></td>
+            <td style="width:20%;">data</td>
+            <td style="width:25%;">
+                <h2>
+                <a href="Home.aspx"  style="color:red ;text-decoration:none">Go To User Page</a></td>
+            </h2>
+            <td><input type="text" placeholder="Search Movies,Sports,Events"; style="height:20px; width: 173px;"/>
+                <img src="images/Very-Basic-Search-icon.png" alt="search" width="20px" style="background-color:mediumseagreen; border-color:mediumseagreen; height: 24px;"/>
+
+            </td>
+        </tr>
+    </table>
+                      <asp:Menu ID="Menu1" runat="server"    Orientation="Horizontal" Width="100%"  stylenavigateurl="" Height="40px" ForeColor="White" BackColor="Firebrick" style="text-align:center; vertical-align:middle;font:x-large;font-family: 'Brush Script MT'" Font-Bold="False" Font-Size="X-Large" SkipLinkText="">
+                                 <DynamicHoverStyle ForeColor="#FF5050" />  
+                                 <DynamicMenuItemStyle ForeColor="Black" />
+                                 <Items>
+                                     <asp:MenuItem Text="Home" Value="New Item" NavigateUrl="~/admin_loginhome.aspx" ></asp:MenuItem>
+                                     <asp:MenuItem Text="Movies" Value="New Item">
+                                         <asp:MenuItem Text="Add Movies" Value="Add Movies" NavigateUrl="~/admin_addmovie.aspx"></asp:MenuItem>
+                                         <asp:MenuItem Text="Delete Movies" Value="Delete Movies"></asp:MenuItem>
+                                         <asp:MenuItem Text="Update Movies" Value="Update Movies"></asp:MenuItem>
+                                         <asp:MenuItem Text="New Item" Value="New Item"></asp:MenuItem>
+                                     </asp:MenuItem>
+                                     <asp:MenuItem Text="Events" Value="Events">
+                                         <asp:MenuItem Text="Add Events" Value="Add Events" NavigateUrl="~/admin_addevent.aspx"></asp:MenuItem>
+                                         <asp:MenuItem Text="Delete Events" Value="Delete Events" NavigateUrl="~/admin_deleteevent.aspx"></asp:MenuItem>
+                                         <asp:MenuItem Text="Update Events" Value="Update Events"></asp:MenuItem>
+                                         <asp:MenuItem Text="View Events" Value="View Events"></asp:MenuItem>
+                                     </asp:MenuItem>
+                                     <asp:MenuItem Text="Sports" Value="Sports">
+                                         <asp:MenuItem Text="Add Sports" Value="New Item"></asp:MenuItem>
+                                         <asp:MenuItem Text="Delete Sports" Value="New Item"></asp:MenuItem>
+                                         <asp:MenuItem Text="Update Sports" Value="New Item"></asp:MenuItem>
+                                         <asp:MenuItem Text="View Sports" Value="New Item"></asp:MenuItem>
+                                     </asp:MenuItem>
+                                     <asp:MenuItem Text="Exclusive Offers" Value="Exclusive Offers">
+                                         <asp:MenuItem Text="Add Offers" Value="New Item"></asp:MenuItem>
+                                         <asp:MenuItem Text="Delete offers" Value="New Item"></asp:MenuItem>
+                                         <asp:MenuItem Text="Update offers" Value="New Item"></asp:MenuItem>
+                                         <asp:MenuItem Text="View offers" Value="New Item"></asp:MenuItem>
+                                     </asp:MenuItem>
+                                 </Items>
+                                 <StaticHoverStyle ForeColor="#FF0066" />
+                                 <StaticMenuItemStyle BackColor="Firebrick" BorderStyle="None" HorizontalPadding="40px" />
+                             </asp:Menu>   
+        </header>
+       
+        <br /><br />
+        <br /> 
+        <br /> 
+
+         <br /><br /><br />  
+
+           <br />
+            <br />
+              <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+         
+        </asp:ContentPlaceHolder>
+
+            <br />
+            <br />
+            <br />
+        <br />
+        <footer id="footer" style="background-color:black;color:white;height:30%;">
+             <p style="width:100%; text-align:center;vertical-align:middle;">
+        Best viewed in <img src="images/Google-Chrome-icon.png" style="height:20px; width:20px; text-align:center;vertical-align:middle;"/> | 
+                 <img src="images/Firefox-icon.png" style="height:20px; width:20px; text-align:center;vertical-align:middle;"/> | 
+                 <img src="images/Internet-Explorer-icon.png" style="height:20px; width:20px; text-align:center;vertical-align:middle;"/> and more <br />
+        For Assistance call : 0551-123456789 &nbsp;&nbsp;&nbsp;&nbsp;
+        <img alt="clock" class="auto-style1" src="images/Programming-Watch-icon.png" height="20px" style="background-color:white"/>&nbsp;&nbsp;&nbsp;
+        10 A.M. to 10 P.M. OR &nbsp;&nbsp;&nbsp; email us on helpebooking.com<br />
+</p>
+    <hr style="background-color:white"/>
+    <table style="width:100%; text-align:center;">
+        <tr><td class="auto-style8"><b>MOVIES :</b>&nbsp;&nbsp;&nbsp;  Now Showing | Coming Soon</td>
+            <td class="auto-style8">&nbsp;&nbsp;<a href="about_us.aspx" style="text-decoration:none;color:whitesmoke;">About Us</a>&nbsp;&nbsp;</td>
+            <td class="auto-style8"><a href="privacy_policy.aspx" style="text-decoration:none;color:whitesmoke;">Privacy Policy</a></td>
+            <td colspan="2" class="auto-style8">Follow Us On &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="femail" placeholder="Enter Your Email" />
+            </td></tr>
+        <tr><td><b>Events :</b> Current Events | Past Events</td>
+            <td><a href="contact_us.aspx" style="text-decoration:none;color:whitesmoke;">Contacts Us </a><br />
+                <a href="FAQS.aspx" style="text-decoration:none;color:whitesmoke;">FAQs</a></td>
+            <td><a href="terms_conditions.aspx" style="text-decoration:none;color:whitesmoke;">Terms & Conditions </a><br />
+                <a href="" style="text-decoration:none;color:whitesmoke;">Sitemap</a></td>
+            <td >
+               <a href="www.google.com"> <img src="images/google-icon.png" height="20px" width="20px"/></a>
+                <a href="www.facebook.com"><img src="images/social-facebook-box-blue-icon.png" height="20px" width="20px" /></a>
+                <a href="www.twitter.com"><img src="images/Twitter-icon.png" height="20px" width="20px" /></a>
+            </td>
+            <td><input type="button" value="SUBSCRIBE" style="background-color:firebrick; color:whitesmoke; border-color:red"/></td>
+        </tr>
+        <tr><td><b>Exclusive Offers :</b>&nbsp;&nbsp;&nbsp;Exclusive Offers</td></tr>
+    </table>
+        </footer>
+    </form>
+</body>
+</html>
+
