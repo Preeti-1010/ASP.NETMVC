@@ -1,0 +1,22 @@
+﻿body {
+}
+
+.header {
+    height:200px;
+    width:100%;
+    background-color:cadetblue;
+}
+#1 {
+    font-family: Calibri;
+    color:red;
+
+}
+#search {
+height:40px;
+width:300px;
+    margin-left: 0px;
+}
+.h1 {
+    
+color:brown;
+}

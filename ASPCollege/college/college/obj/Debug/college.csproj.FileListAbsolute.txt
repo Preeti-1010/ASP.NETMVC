@@ -1,0 +1,5 @@
+D:\pannainfotech\college\college\bin\college.dll
+D:\pannainfotech\college\college\bin\college.pdb
+D:\pannainfotech\college\college\obj\Debug\college.csprojResolveAssemblyReference.cache
+D:\pannainfotech\college\college\obj\Debug\college.dll
+D:\pannainfotech\college\college\obj\Debug\college.pdb
