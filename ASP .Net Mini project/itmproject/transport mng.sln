@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "itmproject", "D:\drive f\seminarnproject\itmproject\", "{C8BCCE88-4648-4E19-BAEA-C0455CF23DC7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/itmproject"
+		Debug.AspNetCompiler.PhysicalPath = "D:\drive f\seminarnproject\itmproject\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\itmproject\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/itmproject"
+		Release.AspNetCompiler.PhysicalPath = "D:\drive f\seminarnproject\itmproject\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\itmproject\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "31806"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8BCCE88-4648-4E19-BAEA-C0455CF23DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BCCE88-4648-4E19-BAEA-C0455CF23DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
